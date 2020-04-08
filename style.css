@@ -10,16 +10,32 @@
     clear: both;
 }
 
+#micro-wrapper {
+    float: left;
+    width: calc(100% - 200px);
+    height: 750px;
+    background-color: blue;
+}
+
 aside {
     float: left;
     width: 200px;
-    height: 800px;
+    height: 750px;
     background-color: yellow;
 }
 
-#micro-wrapper {
-    float: left;
-    width: calc(100vw - 200px);
-    height: 800px;
-    background-color: blue;
+header {
+    height: 50px;
+    background-color: green;
+}
+
+main {
+    overflow: auto;
+}
+
+
+footer {
+    height: calc(100vh - 750px);
+    width: 100%;
+    background-color: red;
 }
