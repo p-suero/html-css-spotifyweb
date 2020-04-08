@@ -1,7 +1,12 @@
+/* LAYOUT GENERALE */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+#macro-wrapper {
+    height: calc(100vh - 90px);
 }
 
 #macro-wrapper::after {
@@ -10,32 +15,32 @@
     clear: both;
 }
 
-#micro-wrapper {
+aside {
+    width: 200px;
+    height: 100%;
     float: left;
-    width: calc(100% - 200px);
-    height: 750px;
-    background-color: blue;
+    background-color: red;
 }
 
-aside {
+#micro-wrapper {
+    width: calc(100% - 200px);
+    height: 100%;
     float: left;
-    width: 200px;
-    height: 750px;
-    background-color: yellow;
+    background-color: green;
 }
 
 header {
     height: 50px;
-    background-color: green;
+    background-color: pink;
 }
 
 main {
-    overflow: auto;
+    height: calc(100% - 50px);
+    overflow-y: auto;
 }
 
-
 footer {
-    height: calc(100vh - 750px);
     width: 100%;
-    background-color: red;
+    height: 90px;
+    background-color: yellow;
 }
