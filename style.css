@@ -49,7 +49,8 @@ footer {
 }
 
 .md-layout-inline-block,
-.md-layout-block {
+.md-layout-block,
+.lg-layout-inline-block {
     display: none;
 }
 
@@ -157,7 +158,12 @@ aside a:hover {
     margin-left: 13px;
 }
 
-/** media-query **/
+#aside-bottom a:nth-child(2) i {
+    border: none;
+}
+
+/* PROGETTAZIONE MOBILE FIRST */
+/** media query per il resonsive **/
 @media screen and (min-width: 768px) {
     aside {
         width: 250px;
@@ -194,16 +200,12 @@ aside a:hover {
     }
 }
 
+@media screen and (min-width:1200px) {
+    .lg-layout-inline-block {
+        display: inline-block;
+    }
 
-
-
-
-
-
-
-
-
-
-
-/* PROGETTAZIONE MOBILE FIRST */
-/** media query per il resonsive **/
+    .lg-display-none {
+        display: none;
+    }
+}
