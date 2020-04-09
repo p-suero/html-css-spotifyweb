@@ -48,7 +48,8 @@ footer {
 }
 
 .md-layout-inline-block,
-.md-layout-block {
+.md-layout-block,
+.lg-layout-inline-block {
     display: none;
 }
 
@@ -77,10 +78,12 @@ a {
     text-decoration: none;
 }
 
-i {
+.icon-normal-size {
    width: 30px;
    height: 30px;
+   text-align: center;
 }
+
 /** selettori aside **/
 aside .container {
     width: 90%;
@@ -91,24 +94,21 @@ aside .container {
     justify-content: space-between;
 }
 
-.fas {
-    text-align: center;
-}
-
 #logo {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 35px;
+    cursor: pointer;
 }
 
 #logo img {
     width: 80%;
     height: auto;
-    margin: auto;
+    cursor: pointer;
 }
 
 .aside-list-style {
     text-align: center;
-    margin-top: 20px;
 }
 
 .aside-list-style li {
@@ -132,13 +132,9 @@ aside .container {
 }
 
 #playlist h5 {
-    margin: 30px 0 10px 12px;
+    margin: 40px 0 10px 12px;
     font-weight: 100;
     text-transform: uppercase;
-}
-
-#playlist .aside-list-style {
-    margin-top: 30px;
 }
 
 aside a:hover {
@@ -174,7 +170,7 @@ header .container {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 header button {
@@ -182,23 +178,21 @@ header button {
     padding: 5px;
     border: 0;
     border-radius: 50px;
-    text-align: center;
     margin-right: 10px;
-    cursor: pointer;
+}
+
+header button i {
+    padding-top: 5px;
 }
 
 #header-right button {
     margin-right: 0;
 }
 
-header button i,
-header button i {
-    padding-top: 5px;
-}
-
 #header-left button:nth-child(1):hover,
 #header-right button:hover {
     background-color: #282828;
+    cursor: pointer;
 }
 
 
@@ -232,10 +226,12 @@ header button i {
     /** selettori aside **/
     #logo.md-text-left {
         text-align: left;
-        padding-left: 15px;
+        padding-left: 12px;
     }
+}
 
-    #playlist .aside-list-style {
-        margin-top: 0;
+@media screen and (min-width: 1200px) {
+    .lg-layout-inline-block {
+        display: inline-block;
     }
 }
