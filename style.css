@@ -23,7 +23,6 @@ body {
     width: calc(100% - 60px);
     height: 100%;
     float: left;
-    background-color: green;
 }
 
 aside {
@@ -34,7 +33,7 @@ aside {
 
 header {
     height: 50px;
-    background-color: pink;
+    width: 100%;
 }
 
 main {
@@ -49,8 +48,7 @@ footer {
 }
 
 .md-layout-inline-block,
-.md-layout-block,
-.lg-layout-inline-block {
+.md-layout-block {
     display: none;
 }
 
@@ -67,6 +65,10 @@ footer {
 }
 
 .bk-color-black-opacity{
+    background-color: #121212;
+}
+
+.bk-color-blackdark-opacity {
     background-color: #282828;
 }
 
@@ -75,6 +77,10 @@ a {
     text-decoration: none;
 }
 
+i {
+   width: 30px;
+   height: 30px;
+}
 /** selettori aside **/
 aside .container {
     width: 90%;
@@ -83,12 +89,6 @@ aside .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-i {
-   width: 30px;
-   height: 28px;
-   vertical-align: middle;
 }
 
 .fas {
@@ -119,15 +119,20 @@ i {
     border-radius: 15px;
 }
 
+#aside-top a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .aside-list-style li span {
     font-size: 14px;
-    padding-left: 13px;
+    padding-left: 15px;
     font-weight: 500;
 }
 
 #playlist h5 {
     margin: 30px 0 10px 12px;
-    margin-left: 12px;
     font-weight: 100;
     text-transform: uppercase;
 }
@@ -142,6 +147,7 @@ aside a:hover {
 
 #aside-bottom {
     padding-bottom: 15px;
+    padding-left: 12px;
 }
 
 #aside-bottom a {
@@ -153,17 +159,51 @@ aside a:hover {
     font-size: 15px;
     padding: 5px;
     border: 2px solid rgb(179, 179, 179);
-    border-radius: 50px;
-    margin-right: 13px;
-    margin-left: 13px;
+    border-radius: 100%;
+    margin-right: 12px;
 }
 
-#aside-bottom a:nth-child(2) i {
+#aside-bottom div:first-child i {
     border: none;
 }
 
+/** selettori header **/
+header .container {
+    width: 88%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    font-size: 18px;
+    padding: 5px;
+    border: 0;
+    border-radius: 50px;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#header-right button {
+    margin-right: 0;
+}
+
+header button i,
+header button i {
+    padding-top: 5px;
+}
+
+#header-left button:nth-child(1):hover,
+#header-right button:hover {
+    background-color: #282828;
+}
+
+
 /* PROGETTAZIONE MOBILE FIRST */
-/** media query per il resonsive **/
+/** media query per il responsive **/
 @media screen and (min-width: 768px) {
     aside {
         width: 250px;
@@ -197,15 +237,5 @@ aside a:hover {
 
     #playlist .aside-list-style {
         margin-top: 0;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .lg-layout-inline-block {
-        display: inline-block;
-    }
-
-    .lg-display-none {
-        display: none;
     }
 }
