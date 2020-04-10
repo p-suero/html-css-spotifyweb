@@ -22,6 +22,7 @@ header {
 
 main {
     height: calc(100% - 50px);
+    width: 100%;
     overflow-y: auto;
 }
 
@@ -47,18 +48,22 @@ footer {
     margin: 0 auto;
 }
 
+
+/*** clearfix ***/
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
+/** selettori per il responsive mobile-first **/
 .md-layout-inline-block,
 .md-layout-block,
 .lg-layout-inline-block {
     display: none;
 }
 
+/** selettori per lo stile "colore" **/
 .color-white {
     color: white;
 }
@@ -84,13 +89,24 @@ a {
     text-decoration: none;
 }
 
-.icon-normal-size {
-   width: 30px;
-   height: 30px;
-   text-align: center;
+/** selettore per i button di default della pagina **/
+.btn-default {
+    width: auto;
+    height: 18px;
+    box-sizing: content-box;
+    font-size: 18px;
+    padding: 7px 7px 7px 7px;
+    border: 0;
+    border-radius: 50px;
+    margin-right: 10px;
 }
 
-/** selettori aside **/
+.btn-default i {
+    width: 18px;
+    height: 18px;
+}
+
+/* SELETTORI ASIDE */
 aside .container {
     display: flex;
     flex-direction: column;
@@ -128,6 +144,13 @@ aside .container {
     align-items: center;
 }
 
+#aside-top i,
+#aside-bottom i {
+   width: 30px;
+   height: 30px;
+   text-align: center;
+}
+
 .aside-list-style li span {
     font-size: 14px;
     padding-left: 15px;
@@ -147,15 +170,11 @@ aside a:hover {
 #aside-bottom {
     padding-bottom: 15px;
     padding-left: 12px;
-}
-
-#aside-bottom a {
     font-size: 15px;
     font-weight: 500;
 }
 
 #aside-bottom i {
-    font-size: 15px;
     padding: 5px;
     border: 2px solid rgb(179, 179, 179);
     border-radius: 100%;
@@ -166,19 +185,7 @@ aside a:hover {
 header .container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-}
-
-header button {
-    font-size: 18px;
-    padding: 5px;
-    border: 0;
-    border-radius: 50px;
-    margin-right: 10px;
-}
-
-header .icon-normal-size {
-    padding-top: 5px;
+    align-items: center;
 }
 
 #header-right button {
@@ -190,7 +197,6 @@ header .icon-normal-size {
     background-color: #282828;
     cursor: pointer;
 }
-
 
 /* PROGETTAZIONE MOBILE FIRST */
 /** media query per il responsive **/
