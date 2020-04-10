@@ -227,8 +227,9 @@ section .card {
 }
 
 section .card img {
-    width: 138px;
-    height: 138px;
+    max-width: 138px;
+    height: auto;
+    object-fit: contain;
 }
 
 section .card p {
@@ -283,18 +284,21 @@ section .card::after {
     /** selettori section **/
     section .section-title-container h1 {
         font-size: 24px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
 
     section .card:hover::after {
         display: inline-block;
     }
-
 }
 
 @media screen and (min-width: 1200px) {
     /** selettore per il responsive **/
     .lg-layout-inline-block {
         display: inline-block;
+    }
+
+    section .section-title-container h1 {
+        padding-bottom: 10px;
     }
 }
