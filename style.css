@@ -63,7 +63,7 @@ footer {
     display: none;
 }
 
-/** selettori per lo stile "colore" **/
+/** selettori per il "colore" **/
 .color-white {
     color: white;
 }
@@ -76,7 +76,7 @@ footer {
     background-color: black
 }
 
-.bk-color-black-opacity{
+.bk-color-black-opacity {
     background-color: #121212;
 }
 
@@ -84,6 +84,7 @@ footer {
     background-color: #282828;
 }
 
+/** selettore per il grassetto **/
 .text-uppercase {
     text-transform: uppercase;
 }
@@ -140,6 +141,7 @@ aside .container {
     padding: 8px 12px;
     border-radius: 15px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 #aside-top i,
@@ -201,7 +203,6 @@ header .container {
 section .section-title-container h1 {
     font-size: 20px;
     padding-bottom: 20px;
-    text-align: center;
 }
 
 section .section-title-container small {
@@ -210,9 +211,8 @@ section .section-title-container small {
 }
 
 section .card-container {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-content: flex-start;
     margin-bottom: 40px;
@@ -221,8 +221,9 @@ section .card-container {
 section .card {
     padding: 25px;
     border-radius: 20px;
-    margin: 0 0 30px 0;
+    margin: 0 30px 30px 0;
     position: relative;
+    cursor: pointer;
 }
 
 section .card img {
@@ -254,10 +255,10 @@ section .card::after {
     display: none;
 }
 
-
 /* PROGETTAZIONE MOBILE FIRST */
 /** media query per il responsive **/
 @media screen and (min-width: 768px) {
+    /** layout generale **/
     aside {
         width: 250px;
     }
@@ -266,6 +267,7 @@ section .card::after {
         width: calc(100% - 250px)
     }
 
+    /** selettori per il responsive **/
     .md-display-none {
         display: none;
     }
@@ -277,10 +279,10 @@ section .card::after {
     .md-layout-block {
         display: block;
     }
+
     /** selettori section **/
     section .section-title-container h1 {
         font-size: 24px;
-        text-align: left;
         padding-bottom: 10px;
     }
 
@@ -288,16 +290,10 @@ section .card::after {
         display: inline-block;
     }
 
-    section .card-container {
-        justify-content: flex-start;
-    }
-
-    section .card {
-        margin-right: 30px;
-    }
 }
 
 @media screen and (min-width: 1200px) {
+    /** selettore per il responsive **/
     .lg-layout-inline-block {
         display: inline-block;
     }
