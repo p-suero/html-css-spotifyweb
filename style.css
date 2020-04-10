@@ -24,6 +24,7 @@ main {
     height: calc(100% - 50px);
     width: 100%;
     overflow-y: auto;
+    padding-top: 30px;
 }
 
 footer {
@@ -47,7 +48,6 @@ footer {
     height: 100%;
     margin: 0 auto;
 }
-
 
 /*** clearfix ***/
 .clearfix::after {
@@ -82,6 +82,10 @@ footer {
 
 .bk-color-blackdark-opacity {
     background-color: #282828;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }
 
 a {
@@ -133,22 +137,17 @@ aside .container {
 .aside-list-style li {
     font-size: 25px;
     list-style: none;
-    line-height: 30px;
     padding: 8px 12px;
     border-radius: 15px;
-}
-
-#aside-top a {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    margin-bottom: 10px;
 }
 
 #aside-top i,
 #aside-bottom i {
    width: 30px;
-   height: 30px;
+   height: auto;
    text-align: center;
+   vertical-align: middle;
 }
 
 .aside-list-style li span {
@@ -157,10 +156,10 @@ aside .container {
     font-weight: 500;
 }
 
-#playlist h5 {
+#playlist h2 {
+    font-size: 13.5px;
     padding: 0 0 10px 12px;
     font-weight: 100;
-    text-transform: uppercase;
 }
 
 aside a:hover {
@@ -198,6 +197,72 @@ header .container {
     cursor: pointer;
 }
 
+/* SELETTORI MAIN */
+section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+section .title-contain h1 {
+    font-size: 20px;
+}
+
+section .expand a  {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+section .expand a:hover {
+    color: white;
+}
+
+section .card-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+section .card {
+    width: auto;
+    padding: 25px;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 30px 30px 0;
+}
+
+section .card img {
+    width: 138px;
+    height: 138px;
+    height: auto;
+}
+
+section .card p {
+    font-size: 14px;
+    padding: 8px 0 5px 0;
+    font-weight: 500;
+}
+
+section .card::after {
+    content: "\f04b";
+    width: 15px;
+    height: 15px;
+    font-family: "Font Awesome 5 Free";
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    padding: 15px;
+    background-color: #1DB954;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+
 /* PROGETTAZIONE MOBILE FIRST */
 /** media query per il responsive **/
 @media screen and (min-width: 768px) {
@@ -219,6 +284,14 @@ header .container {
 
     .md-layout-block {
         display: block;
+    }
+    /** selettori section **/
+    section .title-contain h1 {
+        font-size: 24px;
+    }
+
+    section .card:hover::after {
+        display: inline-block;
     }
 }
 
