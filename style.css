@@ -132,7 +132,6 @@ aside .container {
 }
 
 .aside-list-style li {
-    font-size: 25px;
     list-style: none;
     padding: 8px 12px;
     border-radius: 15px;
@@ -140,12 +139,12 @@ aside .container {
     cursor: pointer;
 }
 
-#aside-top i,
-#aside-bottom i {
-   width: 30px;
-   height: auto;
-   text-align: center;
-   vertical-align: middle;
+#aside-top i {
+    font-size: 25px;
+    width: 30px;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .aside-list-style li span {
@@ -172,6 +171,9 @@ aside a:hover {
 }
 
 #aside-bottom i {
+    width: 30px;
+    height: auto;
+    text-align: center;
     padding: 5px;
     border: 2px solid rgb(179, 179, 179);
     border-radius: 100%;
