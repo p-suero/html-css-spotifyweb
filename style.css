@@ -9,22 +9,6 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-#macro-wrapper {
-    height: calc(100vh - 90px);
-}
-
-#macro-wrapper::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#micro-wrapper {
-    width: calc(100% - 60px);
-    height: 100%;
-    float: left;
-}
-
 aside {
     width: 60px;
     height: 100%;
@@ -45,6 +29,28 @@ footer {
     width: 100%;
     height: 90px;
     background-color: yellow;
+}
+
+#macro-wrapper {
+    height: calc(100vh - 90px);
+}
+
+#micro-wrapper {
+    width: calc(100% - 60px);
+    height: 100%;
+    float: left;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .md-layout-inline-block,
@@ -86,18 +92,15 @@ a {
 
 /** selettori aside **/
 aside .container {
-    width: 90%;
-    height: 100%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 #logo {
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 35px;
+    padding-left: 12px;
     cursor: pointer;
 }
 
@@ -108,7 +111,6 @@ aside .container {
 }
 
 .aside-list-style {
-    text-align: center;
     margin-bottom: 40px;
 }
 
@@ -160,15 +162,8 @@ aside a:hover {
     margin-right: 12px;
 }
 
-#aside-bottom div:first-child i {
-    border: none;
-}
-
 /** selettori header **/
 header .container {
-    width: 88%;
-    height: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -182,7 +177,7 @@ header button {
     margin-right: 10px;
 }
 
-header button i {
+header .icon-normal-size {
     padding-top: 5px;
 }
 
@@ -218,16 +213,6 @@ header button i {
 
     .md-layout-block {
         display: block;
-    }
-
-    .md-text-left {
-        text-align: left;
-    }
-
-    /** selettori aside **/
-    #logo.md-text-left {
-        text-align: left;
-        padding-left: 12px;
     }
 }
 
