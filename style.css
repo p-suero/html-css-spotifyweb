@@ -151,18 +151,6 @@ aside .container {
     vertical-align: middle;
 }
 
-.aside-list-style li span {
-    font-size: 14px;
-    font-weight: 500;
-    padding-left: 15px;
-}
-
-#playlist h2 {
-    font-size: 13.5px;
-    padding: 40px 0 10px 12px;
-    font-weight: 100;
-}
-
 aside a:hover {
     color: white;
 }
@@ -302,22 +290,6 @@ footer #ft-ct-top a:nth-child(2):hover {
     cursor: default;
 }
 
-#footer-right a {
-    padding: 0 16px;
-}
-
-.volume-line {
-    position: relative;
-}
-
-/**  stilato la barra del volume con position, after e before come alternativa al range che è stato usato per la barra di riproduzione (per provarli entrambi) **/
-.volume-line i:nth-child(2) {
-    position: relative;
-    left: 70px;
-    color: white;
-    z-index: 3;
-}
-
 /* RANGE (per la lo scorrimento dei minuti) */
 input[type=range] {
     height: 26px;
@@ -375,6 +347,19 @@ input[type=range]::-webkit-slider-thumb {
         display: block;
     }
 
+    /** selettori aside **/
+    .aside-list-style li span {
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 15px;
+    }
+
+    #playlist h2 {
+        font-size: 13.5px;
+        padding: 40px 0 10px 12px;
+        font-weight: 100;
+    }
+    
     /** selettori section **/
     section .section-title-container h1  {
         text-align: left;
@@ -484,38 +469,11 @@ input[type=range]::-webkit-slider-thumb {
         width: 20%;
         height: 100%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-evenly;
         align-items: center;
     }
 
-    /** selettore linea volume **/
-    .volume-line::before {
-        content: "";
-        display: inline-block;
-        width: 58px;
-        height: 3px;
-        background-color: rgb(179,179,179);
-        position: absolute;
-        border-radius: 50px;
-        top: 50%;
-        left: 50px;
-        transform: translateY(-50%);
-    }
-
-    .volume-line::after {
-        content: "";
-        display: inline-block;
-        width: 30px;
-        height: 3px;
-        background-color: rgb(179,179,179);
-        position: absolute;
-        border-radius: 50px;
-        top: 50%;
-        left: 110px;
-        transform: translateY(-50%);
-    }
-
-    .volume-line:hover::before {
-        background-color: green;
+    #footer-right input {
+        max-width: 30%;
     }
 }
