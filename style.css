@@ -313,7 +313,7 @@ footer #ft-ct-top a:nth-child(2):hover {
 /** ho utilizzato la position per allineare il pallino perchè lo scorrimento dei minuti l'ho stilato con il range. (per provarli entrambi). Ho usato la position relative perchè l'allineamento mi viene dato già dal display flex **/
 .volume-line i:nth-child(2) {
     position: relative;
-    left: 60px;
+    left: 86px;
     color: white;
     z-index: 3;
 }
@@ -500,5 +500,9 @@ input[type=range]::-webkit-slider-thumb {
         top: 50%;
         left: 50px;
         transform: translateY(-50%);
+    }
+
+    .volume-line:hover::after {
+        background-color: green;
     }
 }
