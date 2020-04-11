@@ -313,7 +313,7 @@ footer #ft-ct-top a:nth-child(2):hover {
 /** ho utilizzato la position per allineare il pallino perchè lo scorrimento dei minuti l'ho stilato con il range. (per provarli entrambi). Ho usato la position relative perchè l'allineamento mi viene dato già dal display flex **/
 .volume-line i:nth-child(2) {
     position: relative;
-    left: 86px;
+    left: 70px;
     color: white;
     z-index: 3;
 }
@@ -489,10 +489,10 @@ input[type=range]::-webkit-slider-thumb {
     }
 
     /** selettore linea volume **/
-    .volume-line::after {
+    .volume-line::before {
         content: "";
         display: inline-block;
-        width: 90px;
+        width: 58px;
         height: 3px;
         background-color: rgb(179,179,179);
         position: absolute;
@@ -502,7 +502,20 @@ input[type=range]::-webkit-slider-thumb {
         transform: translateY(-50%);
     }
 
-    .volume-line:hover::after {
+    .volume-line::after {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        background-color: rgb(179,179,179);
+        position: absolute;
+        border-radius: 50px;
+        top: 50%;
+        left: 110px;
+        transform: translateY(-50%);
+    }
+
+    .volume-line:hover::before {
         background-color: green;
     }
 }
