@@ -310,7 +310,7 @@ footer #ft-ct-top a:nth-child(2):hover {
     position: relative;
 }
 
-/** ho utilizzato la position per allineare il pallino perchè lo scorrimento dei minuti l'ho stilato con il range. (per provarli entrambi). Ho usato la position relative perchè l'allineamento mi viene dato già dal display flex **/
+/**  stilato la barra del volume con position, after e before come alternativa al range che è stato usato per la barra di riproduzione (per provarli entrambi) **/
 .volume-line i:nth-child(2) {
     position: relative;
     left: 70px;
