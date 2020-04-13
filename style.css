@@ -473,8 +473,14 @@ input[type=range]::-webkit-slider-thumb {
         align-items: center;
     }
 
-    #footer-right a:not(:first-child) {
+    #footer-right a:nth-child(2),
+    #footer-right div {
         padding-left: 40px;
+    }
+
+    .volume {
+        display: flex;
+        align-items: center;
     }
 
     #footer-right input {
