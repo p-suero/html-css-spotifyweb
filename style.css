@@ -214,7 +214,7 @@ section .card {
 }
 
 section .card img {
-    max-width: 138px;
+    width: 138px;
     height: auto;
     object-fit: contain;
 }
