@@ -13,6 +13,7 @@ aside {
     width: 60px;
     height: 100%;
     float: left;
+    overflow-y: auto;
 }
 
 header {
