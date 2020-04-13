@@ -13,7 +13,8 @@ aside {
     width: 60px;
     height: 100%;
     float: left;
-    overflow-y: auto;
+    /* aggiunto over-flow= hidden per rendere perfetto il sito per i dispositiv mobile in orizzontale */
+    overflow-y: hidden;
 }
 
 header {
