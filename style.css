@@ -13,7 +13,6 @@ aside {
     width: 60px;
     height: 100%;
     float: left;
-    /* aggiunto over-flow= hidden per rendere perfetto il sito per i dispositiv mobile in orizzontale */
     overflow-y: hidden;
 }
 
@@ -249,7 +248,6 @@ footer .container {
 }
 
 #footer-left a:hover {
-    color: white;
     text-decoration: underline;
 }
 
@@ -388,9 +386,10 @@ input[type=range]::-webkit-slider-thumb {
     }
 
     /** selettori footer **/
-    #footer-left {
-        justify-content: flex-start;
-        align-items: center;
+    #footer-left #ft-lf-text a:last-of-type {
+        display: block;
+        font-size: 13px;
+        cursor: pointer;
     }
 
     #ft-ct-top {
@@ -457,9 +456,6 @@ input[type=range]::-webkit-slider-thumb {
     #footer-left {
         width: 20%;
         height: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
     }
 
     #footer-center {
@@ -477,7 +473,7 @@ input[type=range]::-webkit-slider-thumb {
 
     #footer-right a:nth-child(2),
     #footer-right div {
-        padding-left: 40px;
+        margin-left: 40px;
     }
 
     .volume {
@@ -488,5 +484,23 @@ input[type=range]::-webkit-slider-thumb {
     #footer-right input {
         width: 80px;
         margin-left: 5px;
+    }
+
+    /* stile scrollbar */
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #121212;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #454545;
+    }
+
+    ::-webkit-scrollbar-button {
+        display: none;
+          background-color: #121212;
     }
 }
