@@ -14,6 +14,10 @@ aside {
     height: 100%;
     float: left;
     overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 8px;
 }
 
 header {
@@ -31,6 +35,11 @@ main {
 footer {
     width: 100%;
     height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 22px;
 }
 
 #macro-wrapper {
@@ -117,12 +126,6 @@ a {
 }
 
 /* SELETTORI ASIDE */
-aside .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 #logo {
     margin-top: 20px;
     margin-bottom: 35px;
@@ -138,10 +141,11 @@ aside .container {
 
 .aside-list-style li {
     list-style: none;
-    padding: 8px 12px;
+    padding: 8px 4px;
     border-radius: 15px;
     margin-bottom: 10px;
     cursor: pointer;
+    text-align: center;
 }
 
 #aside-top i {
@@ -158,9 +162,9 @@ aside a:hover {
 
 #aside-bottom {
     padding-bottom: 15px;
-    padding-left: 12px;
     font-size: 15px;
     font-weight: 500;
+    text-align: center;
 }
 
 #aside-bottom i {
@@ -170,11 +174,11 @@ aside a:hover {
     padding: 5px;
     border: 2px solid rgb(179, 179, 179);
     border-radius: 100%;
-    margin-right: 12px;
 }
 
 /* SELETTORI HEADER */
 header .container {
+    width: calc(95% - 15px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -227,14 +231,6 @@ section .card p {
 }
 
 /* SELETTORI FOOTER */
-footer .container {
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
 #footer-left {
     width: 40%;
     height: 100%;
@@ -348,6 +344,11 @@ input[type=range]::-webkit-slider-thumb {
     }
 
     /** selettori aside **/
+    .aside-list-style li {
+        padding: 8px 12px;
+        text-align: left;
+    }
+
     .aside-list-style li span {
         font-size: 14px;
         font-weight: 500;
@@ -433,6 +434,11 @@ input[type=range]::-webkit-slider-thumb {
     /** selettore per il funzionamento del responsive **/
     .lg-layout-inline-block {
         display: inline-block;
+    }
+
+    /** selettori aside **/
+    #aside-bottom i {
+        margin-right: 5px;
     }
 
     /** selettori section **/

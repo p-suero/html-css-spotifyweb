@@ -7,79 +7,77 @@
         <link rel="icon" href="img/head-icon.png">
         <script src="https://kit.fontawesome.com/34a507967b.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!-- contenitore comprendente asise, header e main -->
         <div id="macro-wrapper" class="clearfix">
             <!-- inizio aside -->
             <aside class="bk-color-black color-white-opacity">
-                <div class="container">
-                    <div id="aside-top">
-                        <div id="logo">
-                            <img class="md-display-none" src="img/logo.png" alt="Spotify">
-                            <img class="md-layout-inline-block" src="img/md-logo.jpg" alt="Spotify">
-                        </div>
-                        <nav>
-                            <ul class="aside-list-style">
-                                <li class="bk-color-blackdark-opacity color-white">
-                                    <a href="#">
-                                        <i class="fas fa-home"></i>
-                                        <span class="md-layout-inline-block">
-                                            Home
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fas fa-search"></i>
-                                        <span class="md-layout-inline-block">
-                                            Cerca
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fas fa-grip-lines-vertical"></i>
-                                        <span class="md-layout-inline-block">
-                                            La tua libreria
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div id="playlist" class="md-layout-block">
-                            <h2 class="text-uppercase">
-                                Playlist
-                            </h2>
-                            <ul class="aside-list-style">
-                                <li>
-                                    <a href="#">
-                                        <i class="fas fa-plus"></i>
-                                        <span>
-                                            Crea Playlist
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fas fa-heart"></i>
-                                        <span>
-                                            Brani Preferiti
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                <div id="aside-top">
+                    <div id="logo">
+                        <img class="md-display-none" src="img/logo.png" alt="Spotify">
+                        <img class="md-layout-inline-block" src="img/md-logo.jpg" alt="Spotify">
                     </div>
-                    <div id="aside-bottom">
-                        <a href="#">
-                            <i class="fas fa-long-arrow-alt-down"></i>
-                            <span class="md-layout-inline-block">
-                                Install App
-                            </span>
-                        </a>
+                    <nav>
+                        <ul class="aside-list-style">
+                            <li class="bk-color-blackdark-opacity color-white">
+                                <a href="#">
+                                    <i class="fas fa-home"></i>
+                                    <span class="md-layout-inline-block">
+                                        Home
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-search"></i>
+                                    <span class="md-layout-inline-block">
+                                        Cerca
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-grip-lines-vertical"></i>
+                                    <span class="md-layout-inline-block">
+                                        La tua libreria
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="playlist" class="md-layout-block">
+                        <h2 class="text-uppercase">
+                            Playlist
+                        </h2>
+                        <ul class="aside-list-style">
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-plus"></i>
+                                    <span>
+                                        Crea Playlist
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-heart"></i>
+                                    <span>
+                                        Brani Preferiti
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+                <div id="aside-bottom">
+                    <a href="#">
+                        <i class="fas fa-long-arrow-alt-down"></i>
+                        <span class="md-layout-inline-block">
+                            Install App
+                        </span>
+                    </a>
                 </div>
             </aside>
             <!-- contenitore flottato comprendente header e main -->
@@ -316,63 +314,61 @@
         </div>
         <!-- inizio footer -->
         <footer class="bk-color-blackdark-opacity">
-            <div class="container">
-                <!-- parte footer contentente la musica in riproduzione -->
-                <div id="footer-left">
-                    <div id="ft-lt-img">
-                        <img src="img/footer-cover.png" alt="Ultimo">
-                    </div>
-                    <div id="ft-lf-text" class="md-layout-block">
-                        <a href="#" class="color-white">
-                            Ultimo
-                        </a>
-                        <a class="color-white-opacity">
-                            Rondini al Guinzaglio
-                        </a>
-                    </div>
-                    <div id="ft-lf-icon" class="color-white-opacity">
-                        <a href="#">
-                            <i class="far fa-heart"></i>
-                        </a>
-                    </div>
+            <!-- parte footer contentente la musica in riproduzione -->
+            <div id="footer-left">
+                <div id="ft-lt-img">
+                    <img src="img/footer-cover.png" alt="Ultimo">
                 </div>
-                <!-- parte footer contenente i tasti di riproduzione -->
-                <div id="footer-center" class="color-white-opacity" >
-                    <div id="ft-ct-top">
-                        <a href="#">
-                            <i class="fas fa-random"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-step-backward opacity"></i>
-                        </a>
-                        <a href="#">
-                            <i class="far fa-play-circle fa-2x"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-step-forward"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-redo-alt"></i>
-                        </a>
-                    </div>
-                    <div id="ft-ct-bottom" class="minute-before minute-after">
-                        <input class="ps1" type="range">
-                    </div>
+                <div id="ft-lf-text" class="md-layout-block">
+                    <a href="#" class="color-white">
+                        Ultimo
+                    </a>
+                    <a class="color-white-opacity">
+                        Rondini al Guinzaglio
+                    </a>
                 </div>
-                <!-- parte footer contenente il collegamento a dispositivi esterni e regolazione volume -->
-                <div id="footer-right" class="color-white-opacity">
+                <div id="ft-lf-icon" class="color-white-opacity">
                     <a href="#">
-                        <i class="fas fa-list"></i>
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- parte footer contenente i tasti di riproduzione -->
+            <div id="footer-center" class="color-white-opacity" >
+                <div id="ft-ct-top">
+                    <a href="#">
+                        <i class="fas fa-random"></i>
                     </a>
                     <a href="#">
-                        <i class="fas fa-tv"></i>
+                        <i class="fas fa-step-backward opacity"></i>
                     </a>
-                    <div class="volume">
-                        <a href="#">
-                            <i class="fas fa-volume-up"></i>
-                        </a>
-                        <input class="ps1" type="range">
-                    </div>
+                    <a href="#">
+                        <i class="far fa-play-circle fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-step-forward"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-redo-alt"></i>
+                    </a>
+                </div>
+                <div id="ft-ct-bottom" class="minute-before minute-after">
+                    <input class="ps1" type="range">
+                </div>
+            </div>
+            <!-- parte footer contenente il collegamento a dispositivi esterni e regolazione volume -->
+            <div id="footer-right" class="color-white-opacity">
+                <a href="#">
+                    <i class="fas fa-list"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-tv"></i>
+                </a>
+                <div class="volume">
+                    <a href="#">
+                        <i class="fas fa-volume-up"></i>
+                    </a>
+                    <input class="ps1" type="range">
                 </div>
             </div>
         </footer>
