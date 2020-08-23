@@ -22,7 +22,7 @@ aside {
 
 header {
     height: 50px;
-    width: 100%;
+    width: calc(100% - 15px);
 }
 
 main {
@@ -428,6 +428,14 @@ input[type=range]::-webkit-slider-thumb {
     }
 }
 
+/** media query per dispositivi tablez (orizzontale) **/
+@media screen and (min-width: 992px) {
+
+    section .card-container {
+        justify-content: space-between;
+    }
+}
+
 /** media query per il responsive su dispositivi tipo desktop **/
 @media screen and (min-width: 1200px) {
 
@@ -452,10 +460,6 @@ input[type=range]::-webkit-slider-thumb {
         padding-left: 15px;
         margin-bottom: 10px;
         font-weight: 500;
-    }
-
-    section .card-container {
-        justify-content: flex-start;
     }
 
     /** selettori footer **/
